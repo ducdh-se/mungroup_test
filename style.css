@@ -102,3 +102,56 @@ button:disabled {
     border-color: #bdc3c7;
     cursor: not-allowed;
 }
+
+/* Center the data selection section */
+#data-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height to center vertically */
+    text-align: center;
+    background-color: #f4f4f9; /* Light background color */
+}
+
+#data-selection h2 {
+    font-size: 2em;
+    color: #333; /* Darker color for the heading */
+    margin-bottom: 20px;
+}
+
+#data-selection button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Style for Data 1 button */
+#data1-btn {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+}
+
+/* Style for Data 2 button */
+#data2-btn {
+    background-color: #008CBA; /* Blue color */
+    color: white;
+}
+
+/* Hover effect for both buttons */
+#data-selection button:hover {
+    background-color: #333; /* Darker hover color */
+    color: #fff;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Optional: Active state for button press */
+#data-selection button:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+}
+
