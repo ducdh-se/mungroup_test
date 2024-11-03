@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(res => res.json())
             .then(data => {
                 jsonData = shuffleArray(data);
-                dataSelection.hidden = true;  // Hide data selection screen
+                dataSelection.style.display = 'none';  // Hide data selection screen
                 main.removeAttribute('hidden');  // Show quiz content
                 initializeQuiz();
             })
