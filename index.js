@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listeners for data selection
     data1Button.addEventListener('click', () => loadDataAndStartQuiz('./data/data1.json'));
     data2Button.addEventListener('click', () => loadDataAndStartQuiz('./data/data2.json'));
+    data2Button.addEventListener('click', () => loadDataAndStartQuiz('./data/data_ht.json'));
 
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
