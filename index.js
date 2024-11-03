@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dataSelection = document.querySelector('#data-selection');
     const data1Button = document.querySelector('#data1-btn');
     const data2Button = document.querySelector('#data2-btn');
+    const data3Button = document.querySelector('#data3-btn');
 
     // Function to load JSON data and initialize quiz
     function loadDataAndStartQuiz(dataFile) {
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Event listeners for data selection
     data1Button.addEventListener('click', () => loadDataAndStartQuiz('./data/data1.json'));
     data2Button.addEventListener('click', () => loadDataAndStartQuiz('./data/data2.json'));
-    data2Button.addEventListener('click', () => loadDataAndStartQuiz('./data/data_ht.json'));
+    data3Button.addEventListener('click', () => loadDataAndStartQuiz('./data/data_ht.json'));
 
     function shuffleArray(array) {
         for (let i = array.length - 1; i > 0; i--) {
