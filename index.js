@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (enteredPassword === correctPassword) {
             login.style.display = 'none'; // Hide login screen
             dataSelection.removeAttribute('hidden'); // Show data selection screen
-            dataSelection.style.display = "flex";
+            dataSelection.style.display = "block";
         } else {
             errorMessage.style.display = 'block'; // Show error message
         }
