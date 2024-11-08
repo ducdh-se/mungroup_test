@@ -16,12 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const data2Button = document.querySelector('#data2-btn');
     const data3Button = document.querySelector('#data3-btn');
 
-    const correctPassword = "1"; // Change this to your desired password
+    const correctPassword = "122786"; // Change this to your desired password
 
     // Function to validate password
     loginButton.addEventListener('click', () => {
         const enteredPassword = passwordInput.value;
-        console.log(enteredPassword);
         if (enteredPassword === correctPassword) {
             login.style.display = 'none'; // Hide login screen
             dataSelection.removeAttribute('hidden'); // Show data selection screen
