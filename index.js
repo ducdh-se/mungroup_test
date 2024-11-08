@@ -7,10 +7,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const main = document.querySelector('#main');
+    const login = document.querySelector('#login');
     const dataSelection = document.querySelector('#data-selection');
+    const loginButton = document.querySelector('#login-btn');
+    const passwordInput = document.querySelector('#password-input');
+    const errorMessage = document.querySelector('#error-message');
     const data1Button = document.querySelector('#data1-btn');
     const data2Button = document.querySelector('#data2-btn');
     const data3Button = document.querySelector('#data3-btn');
+
+    const correctPassword = "1"; // Change this to your desired password
+
+    // Function to validate password
+    loginButton.addEventListener('click', () => {
+        const enteredPassword = passwordInput.value;
+        if (enteredPassword === correctPassword) {
+            login.style.display = 'none'; // Hide login screen
+            dataSelection.removeAttribute('hidden'); // Show data selection screen
+        } else {
+            errorMessage.style.display = 'block'; // Show error message
+        }
+    });
 
     // Function to load JSON data and initialize quiz
     function loadDataAndStartQuiz(dataFile) {
