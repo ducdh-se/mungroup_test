@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const data2Button = document.querySelector('#data2-btn');
     const data3Button = document.querySelector('#data3-btn');
 
-    const correctPassword = "290303"; // Change this to your desired password
+    const correctPassword = "1"; // Change this to your desired password
 
     // Function to validate password
     loginButton.addEventListener('click', () => {

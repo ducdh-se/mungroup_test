@@ -155,3 +155,17 @@ button:disabled {
     opacity: 0.9;
 }
 
+/* Center the login screen */
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height to center vertically */
+    background-color: #f0f2f5; /* Light background color */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: auto;
+    max-width: 400px;
+}
