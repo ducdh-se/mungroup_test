@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to validate password
     loginButton.addEventListener('click', () => {
         const enteredPassword = passwordInput.value;
+        console.log(enteredPassword);
         if (enteredPassword === correctPassword) {
             login.style.display = 'none'; // Hide login screen
             dataSelection.removeAttribute('hidden'); // Show data selection screen
