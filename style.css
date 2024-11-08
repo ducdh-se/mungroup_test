@@ -1,22 +1,20 @@
-/* Universal Reset */
+/* styles.css */
+
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
 body {
     margin: 10px auto;
     max-width: 1200px;
+}
+
+#root {
+    margin: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Root Container */
-#root {
-    margin: 10px;
-}
-
-/* Headings */
 h1 {
     text-align: center;
 }
@@ -40,15 +38,18 @@ li {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Hover effect */
 li:hover {
     background-color: #2980b9;
 }
 
+/* Selected style */
 li.selected {
     background-color: #2ecc71;
     border-color: #27ae60;
 }
 
+/* Right and wrong styles */
 li.right {
     background-color: #2ecc71;
     border-color: #27ae60;
@@ -59,15 +60,15 @@ li.wrong {
     border-color: #c0392b;
 }
 
-/* Button Container */
 #button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Style for headings */
+/* Style for heading */
 h2 {
+    display: inline;
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -78,22 +79,24 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Button Styles */
+/* Style for buttons */
 button {
-    padding: 10px 15px;
     margin-right: 10px;
+    padding: 10px 15px;
     cursor: pointer;
     background-color: #3498db;
     color: #fff;
     border: 1px solid #2980b9;
     border-radius: 4px;
-    transition: background-color 0.3s ease, transform 0.2s;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Button hover effect */
 button:hover {
     background-color: #2980b9;
 }
 
+/* Disabled button style */
 button:disabled {
     background-color: #bdc3c7;
     border-color: #bdc3c7;
@@ -106,33 +109,43 @@ button:disabled {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 97vh; /* Full viewport height to center vertically */
     text-align: center;
-    background-color: #f4f4f9;
+    background-color: #f4f4f9; /* Light background color */
 }
 
 #data-selection h2 {
     font-size: 2em;
-    color: #333;
+    color: #333; /* Darker color for the heading */
     margin-bottom: 20px;
 }
 
 #data-selection button {
-    width: 200px;
-    padding: 12px 20px;
-    background-color: #4CAF50;
-    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px;
+    cursor: pointer;
     border: none;
     border-radius: 5px;
-    transition: background-color 0.3s, transform 0.2s;
-    margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Style for Data 1 button */
+#data-selection button {
+    width: 150px;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+}
+
+
+/* Hover effect for both buttons */
 #data-selection button:hover {
-    background-color: #333;
-    transform: scale(1.05);
+    background-color: #333; /* Darker hover color */
+    color: #fff;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
 }
 
+/* Optional: Active state for button press */
 #data-selection button:active {
     transform: scale(0.98);
     opacity: 0.9;
@@ -144,63 +157,68 @@ button:disabled {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f0f2f5;
+    height: 97vh; /* Full viewport height to center vertically */
+    background-color: #f0f2f5; /* Light background color */
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    max-width: 400px;
     margin: auto;
+    max-width: 400px;
 }
 
+/* Style the heading */
 #login h2 {
     font-size: 2em;
     color: #333;
     margin-bottom: 20px;
 }
 
-/* Style for password input field */
+/* Style the password input field */
 #password-input {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px; /* At least 16px to prevent zoom on iOS */
+    font-size: 1em;
     outline: none;
     transition: border-color 0.3s;
 }
 
+/* Focus effect for the input field */
 #password-input:focus {
-    border-color: #4CAF50;
+    border-color: #4CAF50; /* Green border on focus */
 }
 
-/* Style for the login button */
+/* Style the login button */
 #login-btn {
-    width: 100%;
     padding: 12px 20px;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Green button */
     color: white;
+    font-size: 1em;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
 }
 
+/* Hover effect for the login button */
 #login-btn:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Slightly darker green */
     transform: translateY(-2px);
 }
 
+/* Active state for button press */
 #login-btn:active {
     transform: translateY(0);
     opacity: 0.9;
 }
 
-/* Error Message */
+/* Style for the error message */
 #error-message {
     margin-top: 10px;
-    color: #e74c3c;
+    color: #e74c3c; /* Red color for error */
     font-size: 0.9em;
-    display: none;
+    display: none; /* Hidden by default */
 }
