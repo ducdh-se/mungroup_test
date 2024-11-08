@@ -18,8 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const correctPassword = "290303"; // Change this to your desired password
 
-    dataSelection.style.display = 'none'
-
     // Function to validate password
     loginButton.addEventListener('click', () => {
         const enteredPassword = passwordInput.value;
